@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Conheça a história, propósito e processo criativo da Floricultura FlorIs." />
+  <title>Sobre | FlorIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header" data-header>
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="index.html"><span class="brand__icon" aria-hidden="true">✿</span><span>FlorIs</span></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <ul class="nav-menu" data-nav-menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="nav-menu__login" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container page-hero__content">
+        <p class="eyebrow">Nossa essência</p>
+        <h1>Uma floricultura para quem valoriza beleza, calma e cuidado nos detalhes.</h1>
+        <p>A Floricultura FlorIs nasceu da ideia de criar uma experiência de compra floral mais acolhedora, elegante e fácil de entender.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="historia-title">
+      <div class="container split-layout split-layout--reverse">
+        <div class="image-card" aria-label="Ilustração decorativa de flores em tons pastéis">
+          <div class="image-card__flower image-card__flower--one"></div>
+          <div class="image-card__flower image-card__flower--two"></div>
+          <div class="image-card__flower image-card__flower--three"></div>
+        </div>
+        <div>
+          <p class="eyebrow">História</p>
+          <h2 id="historia-title">Do gesto simples ao presente inesquecível.</h2>
+          <p>Nosso site simula uma floricultura de médio porte com catálogo, atendimento, conteúdo institucional, formulário de contato e área de login fictícia. A proposta visual usa cores suaves para transmitir afeto, confiança e sofisticação.</p>
+          <p>Cada página foi estruturada para que o visitante consiga entender rapidamente o propósito do negócio, navegar sem ficar preso e receber feedback claro ao interagir com formulários e botões.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="valores-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Valores</p>
+          <h2 id="valores-title">O que guia nossas escolhas.</h2>
+        </div>
+
+        <div class="values-grid">
+          <article class="value-card reveal-card">
+            <h3>Clareza</h3>
+            <p>Informações objetivas sobre cada linha floral, evitando dúvidas na hora de escolher.</p>
+          </article>
+          <article class="value-card reveal-card">
+            <h3>Delicadeza</h3>
+            <p>Visual leve, linguagem acolhedora e composição inspirada em tons pastéis.</p>
+          </article>
+          <article class="value-card reveal-card">
+            <h3>Confiança</h3>
+            <p>Validações e mensagens de feedback reduzem erros e tornam a navegação mais segura.</p>
+          </article>
+          <article class="value-card reveal-card">
+            <h3>Personalização</h3>
+            <p>O contato simula um orçamento conforme ocasião, preferências e observações do cliente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="processo-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Processo</p>
+          <h2 id="processo-title">Como um pedido floral seria produzido.</h2>
+        </div>
+
+        <ol class="timeline">
+          <li>
+            <span>01</span>
+            <div>
+              <h3>Escolha do estilo</h3>
+              <p>O cliente seleciona uma coleção no catálogo ou descreve a ocasião no formulário.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <h3>Curadoria das flores</h3>
+              <p>A equipe combina flores, folhagens e embalagem conforme a mensagem desejada.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <h3>Montagem artesanal</h3>
+              <p>O arranjo é finalizado com atenção ao equilíbrio visual, contraste e acabamento.</p>
+            </div>
+          </li>
+          <li>
+            <span>04</span>
+            <div>
+              <h3>Entrega </h3>
+              <p>O pedido é preparado para uma experiência bonita desde a chegada até a entrega.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--accent" aria-labelledby="ux-title">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">UI/UX aplicada</p>
+          <h2 id="ux-title">Design pensado para orientar o visitante.</h2>
+          <p>A interface utiliza hierarquia visual, contraste, botões consistentes, textos curtos e feedback em tempo real. Isso atende às heurísticas de Nielsen, principalmente prevenção de erros, visibilidade do status do sistema e consistência.</p>
+        </div>
+        <div class="quote-card">
+          <p>“Flores comunicam sentimentos. O site precisa fazer o mesmo: com clareza, leveza e intenção.”</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html"><span class="brand__icon" aria-hidden="true">✿</span><span>FlorIs</span></a>
+        <p>Floricultura moderna com curadoria artesanal, paleta suave e atendimento acolhedor.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <p>Segunda a sábado, das 9h às 18h.</p>
+        <p>contato@floriculturafloris.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

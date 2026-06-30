@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo da Floricultura FlorIs com buquês, arranjos, assinatura floral e opções para eventos." />
+  <title>Catálogo | FlorIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header" data-header>
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="index.html"><span class="brand__icon" aria-hidden="true">✿</span><span>FlorIs</span></a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button>
+      <ul class="nav-menu" data-nav-menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="nav-menu__login" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero page-hero--catalog">
+      <div class="container page-hero__content">
+        <p class="eyebrow">Catálogo floral</p>
+        <h1>Escolha uma coleção ou simule um orçamento.</h1>
+        <p>Os botões e filtros abaixo manipulam a página via JavaScript, exibindo estados, mensagens e um modal de detalhes.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="catalogo-title">
+      <div class="container">
+        <div class="catalog-toolbar">
+          <div>
+            <p class="eyebrow">Produtos</p>
+            <h2 id="catalogo-title">Coleções disponíveis</h2>
+          </div>
+          <p class="cart-pill" aria-live="polite">Itens no orçamento: <strong data-cart-count>0</strong></p>
+        </div>
+
+        <div class="filter-group" aria-label="Filtros do catálogo">
+          <button class="filter-button is-active" type="button" data-filter="todos">Todos</button>
+          <button class="filter-button" type="button" data-filter="romanticos">Românticos</button>
+          <button class="filter-button" type="button" data-filter="minimalistas">Minimalistas</button>
+          <button class="filter-button" type="button" data-filter="eventos">Eventos</button>
+          <button class="filter-button" type="button" data-filter="assinatura">Assinatura</button>
+        </div>
+
+        <div class="product-grid" data-product-grid>
+          <article class="product-card reveal-card" data-category="romanticos" id="romanticos">
+            <div class="product-card__image product-card__image--rose" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Romântico</p>
+              <h3>Buquê Aurora</h3>
+              <p>Rosas claras, lisianthus e folhagens em embalagem rosé.</p>
+              <strong>R$ 149,90</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Buquê Aurora" data-description="Indicado para aniversários, pedidos românticos e mensagens delicadas. Possui acabamento em papel rosé e laço acetinado.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-card" data-category="minimalistas" id="minimalistas">
+            <div class="product-card__image product-card__image--sage" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Minimalista</p>
+              <h3>Arranjo Calmaria</h3>
+              <p>Flores brancas e folhagens em vaso fosco para decoração.</p>
+              <strong>R$ 119,90</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Arranjo Calmaria" data-description="Perfeito para mesas laterais, recepções e ambientes de trabalho. Tem estética limpa e elegante.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-card" data-category="eventos" id="eventos">
+            <div class="product-card__image product-card__image--lavender" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Eventos</p>
+              <h3>Mesa Jardim Suave</h3>
+              <p>Composição baixa para jantares, noivados e celebrações intimistas.</p>
+              <strong>A partir de R$ 289,90</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Mesa Jardim Suave" data-description="Projeto decorativo para mesas de até seis lugares, com flores claras, folhagens e acabamento harmônico.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-card" data-category="assinatura">
+            <div class="product-card__image product-card__image--peach" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Assinatura</p>
+              <h3>Clube Serena</h3>
+              <p>Arranjo semanal ou quinzenal com curadoria de flores da estação.</p>
+              <strong>A partir de R$ 199,90/mês</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Clube Serena" data-description="Serviço recorrente para casas, escritórios e recepções. A seleção muda conforme a estação e disponibilidade.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-card" data-category="romanticos">
+            <div class="product-card__image product-card__image--pink" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Romântico</p>
+              <h3>Caixa Doce Afeto</h3>
+              <p>Mini flores, cartão e embalagem premium em tons de blush.</p>
+              <strong>R$ 169,90</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Caixa Doce Afeto" data-description="Opção delicada para presente afetivo. Acompanha cartão e acabamento elegante.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal-card" data-category="minimalistas">
+            <div class="product-card__image product-card__image--cream" aria-hidden="true"></div>
+            <div class="product-card__body">
+              <p class="product-card__tag">Minimalista</p>
+              <h3>Vaso Linho</h3>
+              <p>Composição neutra para aparadores, recepções e salas modernas.</p>
+              <strong>R$ 139,90</strong>
+              <div class="product-card__actions">
+                <button type="button" class="button button--small button--primary" data-add-item>Adicionar</button>
+                <button type="button" class="button button--small button--ghost" data-open-modal data-title="Vaso Linho" data-description="Arranjo de longa duração visual com flores claras e recipiente neutro. Combina com ambientes clean.">Detalhes</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" data-empty-state hidden>Nenhum produto encontrado para esse filtro.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="product-modal" data-product-modal aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Fechar modal" data-close-modal>×</button>
+    <p class="eyebrow">Detalhes do produto</p>
+    <h2 id="modal-title" data-modal-title>Produto</h2>
+    <p data-modal-description>Descrição do produto.</p>
+    <a class="button button--primary" href="contato.html">Solicitar orçamento</a>
+  </dialog>
+
+  <div class="toast" data-toast aria-live="polite"></div>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html"><span class="brand__icon" aria-hidden="true">✿</span><span>FlorIs</span></a>
+        <p>Floricultura moderna com curadoria artesanal, paleta suave e atendimento acolhedor.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <p>Segunda a sábado, das 9h às 18h.</p>
+        <p>contato@floriculturafloris.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

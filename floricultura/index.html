@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Floricultura Pétala Serena: arranjos florais modernos, buquês personalizados, assinatura de flores e decoração para eventos." />
+  <title>Floricultura FlorIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header" data-header>
+    <nav class="navbar container" aria-label="Navegação principal">
+      <a class="brand" href="index.html" aria-label="Página inicial da Floricultura FlorIs">
+        <span class="brand__icon" aria-hidden="true">✿</span>
+        <span>FlorIs</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" data-nav-menu>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="nav-menu__login" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero flower-stage" aria-labelledby="titulo-home">
+      <canvas id="flowerCanvas" aria-label="Animação interativa: clique para adicionar flores ao fundo" role="img"></canvas>
+
+      <div class="hero__content container">
+        <p class="eyebrow">Floricultura artesanal e contemporânea</p>
+        <h1 id="titulo-home">Flores pensadas para transformar pequenos momentos em memórias elegantes.</h1>
+        <p class="hero__text">Criamos buquês, arranjos e experiências florais com acabamento delicado e atendimento personalizado para presentes, eventos e decoração.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="catalogo.html">Ver catálogo</a>
+          <a class="button button--ghost" href="contato.html">Montar orçamento</a>
+        </div>
+        <p class="hero__hint">Clique no fundo para adicionar flores interativas.</p>
+      </div>
+    </section>
+
+    <section class="section section--soft" aria-labelledby="diferenciais">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Experiência completa</p>
+          <h2 id="diferenciais">Por que escolher a FlorIs?</h2>
+          <p>Unimos estética moderna, cuidado manual e comunicação clara para que a escolha das flores seja simples, segura e encantadora.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal-card">
+            <span class="feature-card__icon" aria-hidden="true">🌷</span>
+            <h3>Arranjos personalizados</h3>
+            <p>Composições criadas conforme ocasião, paleta, estilo e mensagem que você deseja transmitir.</p>
+          </article>
+          <article class="feature-card reveal-card">
+            <span class="feature-card__icon" aria-hidden="true">♡</span>
+            <h3>Atendimento afetivo</h3>
+            <p>Orientamos cada escolha com sugestões claras, evitando erros em datas especiais e presentes delicados.</p>
+          </article>
+          <article class="feature-card reveal-card">
+            <span class="feature-card__icon" aria-hidden="true">✦</span>
+            <h3>Design contemporâneo</h3>
+            <p>Tons pastéis, folhagens leves e embalagens elegantes para uma identidade visual sofisticada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="servicos-home">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">Serviços</p>
+          <h2 id="servicos-home">Flores para presentear, decorar e celebrar.</h2>
+          <p>Nosso catálogo foi pensado para atender quem deseja comprar de forma rápida, mas também quem precisa de uma solução floral mais completa.</p>
+          <a class="text-link" href="catalogo.html">Conhecer linhas do catálogo</a>
+        </div>
+
+        <div class="service-list" aria-label="Principais serviços da floricultura">
+          <article>
+            <h3>Buquês de presente</h3>
+            <p>Modelos românticos, minimalistas e coloridos para aniversários, agradecimentos e surpresas.</p>
+          </article>
+          <article>
+            <h3>Assinatura floral</h3>
+            <p>Entrega semanal ou quinzenal de arranjos frescos para casas, escritórios e recepções.</p>
+          </article>
+          <article>
+            <h3>Eventos intimistas</h3>
+            <p>Decoração floral para jantares, pedidos de namoro, noivados, celebrações e ensaios fotográficos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--accent" aria-labelledby="colecoes-home">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">Coleções queridinhas</p>
+          <h2 id="colecoes-home">Escolha pela emoção do momento.</h2>
+        </div>
+
+        <div class="collection-grid">
+          <a class="collection-card" href="catalogo.html#romanticos">
+            <span>Românticos</span>
+            <small>Rosas, lisianthus e astromélias frescas</small>
+          </a>
+          <a class="collection-card" href="catalogo.html#minimalistas">
+            <span>Minimalistas</span>
+            <small>Arranjos leves para ambientes modernos</small>
+          </a>
+          <a class="collection-card" href="catalogo.html#eventos">
+            <span>Eventos</span>
+            <small>Decoração delicada para celebrações</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="newsletter-title">
+      <div class="container newsletter-card">
+        <div>
+          <p class="eyebrow">Clube floral</p>
+          <h2 id="newsletter-title">Receba inspirações de flores e cuidados.</h2>
+          <p>Cadastre seu e-mail para a inscrição em nossa lista de novidades.</p>
+        </div>
+        <form class="inline-form" data-newsletter-form novalidate>
+          <label class="sr-only" for="newsletter-email">E-mail</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="seuemail@exemplo.com" autocomplete="email" />
+          <button class="button button--primary" type="submit">Cadastrar</button>
+          <p class="form-feedback" data-newsletter-feedback aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="index.html"><span class="brand__icon" aria-hidden="true">✿</span><span>Floricultura FlorIs</span></a>
+        <p>Floricultura moderna com curadoria artesanal e atendimento acolhedor.</p>
+      </div>
+      <div>
+        <h2>Navegação</h2>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <p>Segunda a sábado, das 9h às 18h.</p>
+        <p>contato@floriculturafloris.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="x-shader/x-fragment" id="fragmentShader">
+    uniform float u_ratio;
+    uniform vec2 u_point;
+    uniform float u_time;
+    uniform float u_stop_time;
+    uniform vec3 u_stop_randomizer;
+    uniform sampler2D u_texture;
+    uniform vec3 u_background_color;
+
+    varying vec2 vUv;
+
+    #define PI 3.14159265359
+
+    vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+    vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+    vec3 permute(vec3 x) { return mod289(((x * 34.0) + 1.0) * x); }
+    float snoise(vec2 v) {
+        const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+        vec2 i = floor(v + dot(v, C.yy));
+        vec2 x0 = v - i + dot(i, C.xx);
+        vec2 i1;
+        i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+        vec4 x12 = x0.xyxy + C.xxzz;
+        x12.xy -= i1;
+        i = mod289(i);
+        vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
+        vec3 m = max(0.5 - vec3(dot(x0, x0), dot(x12.xy, x12.xy), dot(x12.zw, x12.zw)), 0.0);
+        m = m * m;
+        m = m * m;
+        vec3 x = 2.0 * fract(p * C.www) - 1.0;
+        vec3 h = abs(x) - 0.5;
+        vec3 ox = floor(x + 0.5);
+        vec3 a0 = x - ox;
+        m *= 1.79284291400159 - 0.85373472095314 * (a0 * a0 + h * h);
+        vec3 g;
+        g.x = a0.x * x0.x + h.x * x0.y;
+        g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+        return 130.0 * dot(m, g);
+    }
+
+    float get_dot_shape(vec2 dist, float radius_max, float radius_line) {
+        return 1. - smoothstep(radius_line * radius_max, radius_max, dot(dist, dist) * 4.0);
+    }
+
+    float get_stem_shape(vec2 _cursor, vec2 _uv, float _t, float _size, float _flowery, vec2 _rand) {
+        float stroke_width = .01;
+        float noise_power = .2;
+        float cursor_horizontal_noise = noise_power * (1. + (1. - _flowery)) * snoise(3. * _uv * (_rand - .5));
+        cursor_horizontal_noise *= pow(dot(_cursor.y, _cursor.y), .3 * _flowery);
+        cursor_horizontal_noise *= pow(dot(_uv.y, _uv.y), .3);
+        _cursor.x += cursor_horizontal_noise;
+        _cursor.y *= (1. - ((1. - _flowery) * .7));
+        _cursor.y += ((1. - _flowery) * .7 * _rand.x);
+        stroke_width = (1. - _flowery) * .9 * pow(dot(_uv.y, _cursor.x), 1.) + _flowery * .03;
+        stroke_width -= .02;
+        float left = smoothstep(-stroke_width, 0., _cursor.x);
+        float right = smoothstep(stroke_width, 0., _cursor.x);
+        float stem_shape = left * right;
+        float stem_top_mask = smoothstep(_cursor.y - .1, _cursor.y, min(-.1, _t - 1.));
+        stem_shape *= stem_top_mask;
+        stem_shape += .5 * get_dot_shape(_cursor + vec2(0., .02), .15 * _size, .5);
+        stem_shape *= stem_top_mask;
+        return stem_shape;
+    }
+
+    void main() {
+        float speed = 1.3;
+        float t = speed * u_stop_time;
+        vec2 uv = vUv;
+        uv += 0.00007 * snoise(vUv * 6.0 + vec2(0.0, 15.0 * cos(0.1 * u_time)));
+        uv.y += 0.00005;
+        vec3 color = texture2D(u_texture, uv).xyz;
+        color += 0.0015 * u_background_color;
+        vec2 cursor = uv - u_point.xy;
+        cursor.x *= u_ratio;
+        float base_radius = .02 + .2 * u_stop_randomizer.y;
+        float grow_duration = .6;
+        float grow_speed = 2. * speed;
+        float bloom_duration = .3 * u_stop_randomizer.y;
+        float is_open = step(.1, base_radius);
+
+        if (t < grow_duration) {
+            vec3 stem_color = u_background_color - normalize(vec3(.3, .5, .1));
+            float stem_shape = get_stem_shape(cursor, uv, grow_speed * t, base_radius, 1., u_stop_randomizer.xy);
+            stem_shape += get_stem_shape(cursor, uv, grow_speed * t, 0., 0., u_stop_randomizer.yz);
+            stem_shape += get_stem_shape(cursor, uv, grow_speed * t, 0., 0., u_stop_randomizer.zy);
+            vec3 stem = stem_shape * stem_color;
+            color -= stem;
+        }
+
+        if (t < grow_duration + is_open * bloom_duration) {
+            float blooming_time = max(0., pow(1.1 * t, 2.) - .05);
+            float radius = base_radius * blooming_time;
+            vec2 noisy_cursor = vUv - u_point.xy;
+            noisy_cursor.x *= u_ratio;
+            noisy_cursor.y *= (1. + u_stop_randomizer.y * is_open);
+            noisy_cursor -= .02 * snoise(noisy_cursor * 10. + vec2(0., 10. * sin(.5 * t + PI)));
+            vec3 flower_color = u_background_color;
+            flower_color -= normalize(vec3(.5 + .5 * sin(2. * u_time), .3, .5 + .5 * sin(2. * u_time + PI)));
+            color -= .4 * get_dot_shape(noisy_cursor, 1.5 * radius, .0) * flower_color;
+            color = .7 * color + .3 * mix(u_background_color, color, 1. - get_dot_shape(noisy_cursor, radius, 0.));
+            noisy_cursor.y -= .02;
+            float inner_r = .7 * radius;
+            float inner_w = .2 * radius;
+            float ring_shape = get_dot_shape(noisy_cursor, inner_r + inner_w, .9) - get_dot_shape(noisy_cursor, inner_r, .9);
+            color += .2 * blooming_time * ring_shape * step(.1, base_radius);
+            inner_r = .4 * radius;
+            inner_w = .1 * radius;
+            ring_shape = get_dot_shape(noisy_cursor, inner_r + inner_w, .9) - get_dot_shape(noisy_cursor, inner_r, .9);
+            color += .1 * pow(t, .5) * ring_shape * step(.1, base_radius);
+            vec2 low_noise_cursor = vUv - u_point.xy;
+            low_noise_cursor.x *= .5 * u_ratio;
+            low_noise_cursor.y += .02;
+            low_noise_cursor += .01 * snoise(low_noise_cursor * 10. + t);
+            color -= is_open * pow(t, 5.) * get_dot_shape(low_noise_cursor, .01 * radius, 0.);
+        }
+
+        gl_FragColor = vec4(color, 1.0);
+    }
+  </script>
+
+  <script type="x-shader/x-vertex" id="vertexShader">
+    varying vec2 vUv;
+    void main() {
+        vUv = uv;
+        gl_Position = vec4(position, 1.);
+    }
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/flowers.js"></script>
+</body>
+</html>
